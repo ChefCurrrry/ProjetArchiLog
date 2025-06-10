@@ -50,6 +50,7 @@
     "Application.ClientEmprunt.executor": "Run",
     "Application.ClientReservation.executor": "Run",
     "Application.ClientRetour.executor": "Run",
+    "Application.ServeurCommun.executor": "Run",
     "Application.ServeurEmprunt.executor": "Run",
     "Application.ServeurReservation.executor": "Run",
     "Application.ServeurRetour.executor": "Run",
@@ -64,9 +65,16 @@
     "onboarding.tips.debug.path": "C:/Users/StarPlatinum18/Documents/Projet_Universitaire/ProjetArchiLog/ProjetMediathek/src/Main.java",
     "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientEmprunt">
+  <component name="RunManager" selected="Application.ServeurCommun">
     <configuration name="ClientEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientEmprunt" />
       <module name="ProjetMediathek" />
@@ -106,6 +114,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServeurCommun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="serveur.ServeurCommun" />
+      <module name="ProjetMediathek" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serveur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServeurEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="serveur.ServeurEmprunt" />
       <module name="ProjetMediathek" />
@@ -119,26 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServeurReservation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="serveur.ServeurReservation" />
-      <module name="ProjetMediathek" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="serveur.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServeurCommun" />
         <item itemvalue="Application.ClientEmprunt" />
-        <item itemvalue="Application.ClientReservation" />
         <item itemvalue="Application.ClientRetour" />
+        <item itemvalue="Application.ClientReservation" />
         <item itemvalue="Application.ServeurEmprunt" />
-        <item itemvalue="Application.ServeurReservation" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749573843737</updated>
-      <workItem from="1749573844990" duration="7027000" />
+      <workItem from="1749573844990" duration="9069000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit and Last Commit">
       <option name="closed" value="true" />
@@ -168,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749579954857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Another commit">
+      <option name="closed" value="true" />
+      <created>1749581150492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749581150492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Another commit">
+      <option name="closed" value="true" />
+      <created>1749584310832</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749584310832</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +200,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit and Last Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit and Last Commit" />
+    <MESSAGE value="Another commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
