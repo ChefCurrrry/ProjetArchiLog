@@ -75,7 +75,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientRetour">
+  <component name="RunManager" selected="Application.ClientEmprunt">
     <configuration name="ClientEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientEmprunt" />
       <module name="ProjetMediathek" />
@@ -115,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServeurCommun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="serveur.ServeurCommun" />
+    <configuration name="LancerServeur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="serveur.LancerServeur" />
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
@@ -143,10 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientEmprunt" />
         <item itemvalue="Application.ClientRetour" />
         <item itemvalue="Application.ClientReservation" />
-        <item itemvalue="Application.ClientEmprunt" />
-        <item itemvalue="Application.ServeurCommun" />
+        <item itemvalue="Application.LancerServeur" />
         <item itemvalue="Application.ServeurEmprunt" />
       </list>
     </recent_temporary>

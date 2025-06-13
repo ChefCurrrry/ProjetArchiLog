@@ -12,6 +12,7 @@ public class ClientEmprunt {
             while (true) {
                 System.out.println("\n=== Client Emprunt ===");
                 try (
+                        //remplacer le localhost par l'adresse IP de la machine qui fait tourner le serveur (le main de la classe LancerServeur)
                         Socket socket = new Socket("localhost", 3000);
                         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                         PrintWriter out = new PrintWriter(socket.getOutputStream(), true)
