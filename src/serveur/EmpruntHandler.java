@@ -6,21 +6,22 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class EmpruntHandler implements Runnable {
+public class EmpruntHandler extends ServiceHandler {
+    private static int PORT = 3000;
 
-    private Socket socket;
-    private GestionnaireMediatheque gestionnaire;
 
-    public EmpruntHandler(Socket socket, GestionnaireMediatheque gestionnaire) {
-        this.socket = socket;
-        this.gestionnaire = gestionnaire;
+    public int getPORT() {
+        return PORT;
+    }
+    public EmpruntHandler(Socket socket ) {
+        super(socket);
     }
 
     @Override
     public void run() {
         try (
-                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                PrintWriter out = new PrintWriter(socket.getOutputStream(), true)
+                BufferedReader in = new BufferedReader(new InputStreamReader(getClientSocket().getInputStream()));
+                PrintWriter out = new PrintWriter(getClientSocket().getOutputStream(), true)
         ) {
             out.println("Bienvenue. Entrez votre numéro abonné et numéro document à emprunter (ex : 1;101)");
 
@@ -36,8 +37,8 @@ public class EmpruntHandler implements Runnable {
             int idAbonne = Integer.parseInt(infos[0]);
             int idDocument = Integer.parseInt(infos[1]);
 
-            Abonne ab = gestionnaire.getAbonne(idAbonne);
-            Document doc = gestionnaire.getDocument(idDocument);
+            Abonne ab = gestionnaireStatic.getAbonne(idAbonne);
+            Document doc = gestionnaireStatic.getDocument(idDocument);
 
             if (ab == null) {
                 out.println(" Abonné inconnu.");
@@ -58,10 +59,12 @@ public class EmpruntHandler implements Runnable {
 
         } catch (IOException e) {
             System.err.println("Erreur communication : " + e.getMessage());
-        } finally {
+        }finally {
             try {
-                socket.close();
-            } catch (IOException ignored) {}
+                getClientSocket().close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

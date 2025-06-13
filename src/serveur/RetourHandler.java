@@ -6,21 +6,23 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class RetourHandler implements Runnable{
-    private Socket socket;
-    private GestionnaireMediatheque gestionnaire;
+public class RetourHandler extends ServiceHandler{
+    private static int PORT = 4000;
 
-    public RetourHandler(Socket socket, GestionnaireMediatheque gestionnaire) {
-        this.socket = socket;
-        this.gestionnaire = gestionnaire;
+    @Override
+    public int getPORT() {
+        return PORT;
+    }
+    public RetourHandler(Socket socket ) {
+        super(socket);
     }
 
 
     @Override
     public void run() {
         try(
-                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                PrintWriter out = new PrintWriter(socket.getOutputStream(), true)
+                BufferedReader in = new BufferedReader(new InputStreamReader(getClientSocket().getInputStream()));
+                PrintWriter out = new PrintWriter(getClientSocket().getOutputStream(), true)
         )
         {
             out.println("Bienvenue. Entrez le numéro du document à rendre");
@@ -30,7 +32,7 @@ public class RetourHandler implements Runnable{
 
             int idDocument = Integer.parseInt(ligne.trim());
 
-            Document doc = gestionnaire.getDocument(idDocument);
+            Document doc = gestionnaireStatic.getDocument(idDocument);
 
 
 
@@ -43,10 +45,12 @@ public class RetourHandler implements Runnable{
 
         } catch (IOException e) {
             System.err.println("Erreur communication : " + e.getMessage());
-        } finally {
+        }finally {
             try {
-                socket.close();
-            } catch (IOException ignored) {}
+                getClientSocket().close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
