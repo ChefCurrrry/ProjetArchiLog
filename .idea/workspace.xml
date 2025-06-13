@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afb4761a-4ab4-4d20-ada2-b57be51f597b" name="Changes" comment="Faut changer le serveur et les service, mettre une classe pour généraliser les services">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serveur/HandlerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serveur/Serveur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serveur/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serveur/ServiceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetMediathek/serveur/ServeurEmprunt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetMediathek/serveur/ServeurReservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetMediathek/serveur/ServeurRetour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/EmpruntHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/EmpruntHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/ReservationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/ReservationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/RetourHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/RetourHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/ServeurCommun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/ServeurCommun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/ServeurEmprunt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/ServeurReservation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serveur/ServeurRetour.java" beforeDir="false" />
-    </list>
+    <list default="true" id="afb4761a-4ab4-4d20-ada2-b57be51f597b" name="Changes" comment="ça remarche mais avec pleins de modifs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +75,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientReservation">
+  <component name="RunManager" selected="Application.ClientRetour">
     <configuration name="ClientEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientEmprunt" />
       <module name="ProjetMediathek" />
@@ -161,10 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientRetour" />
         <item itemvalue="Application.ClientReservation" />
         <item itemvalue="Application.ClientEmprunt" />
         <item itemvalue="Application.ServeurCommun" />
-        <item itemvalue="Application.ClientRetour" />
         <item itemvalue="Application.ServeurEmprunt" />
       </list>
     </recent_temporary>
@@ -211,7 +193,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749584310832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ça remarche mais avec pleins de modifs">
+      <option name="closed" value="true" />
+      <created>1749808630133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749808630133</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ça remarche mais avec pleins de modifs">
+      <option name="closed" value="true" />
+      <created>1749808646413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749808646413</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +220,8 @@
     <MESSAGE value="Another commit" />
     <MESSAGE value="Faut changer le serveur et les service, mettre une classe pour génér" />
     <MESSAGE value="Faut changer le serveur et les service, mettre une classe pour généraliser les services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Faut changer le serveur et les service, mettre une classe pour généraliser les services" />
+    <MESSAGE value="ça remarche mais avec pleins de modifs" />
+    <option name="LAST_COMMIT_MESSAGE" value="ça remarche mais avec pleins de modifs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

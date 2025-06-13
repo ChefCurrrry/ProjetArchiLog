@@ -2,10 +2,8 @@ package serveur;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.net.ServerSocket;
-import java.net.Socket;
 
-public class ServeurCommun {
+public class LancerServeur {
 
 
     public static void main(String[] args) throws IOException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
