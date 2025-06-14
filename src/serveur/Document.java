@@ -5,4 +5,7 @@ public interface Document {
     void reserver(Abonne ab) throws ReservationException;
     void emprunter(Abonne ab) throws EmpruntException;
     void retourner();
+
+
+
 }

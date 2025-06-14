@@ -28,7 +28,7 @@ public class Livre implements Document {
     @Override
     public synchronized void reserver(Abonne ab) throws ReservationException {
         if (estEmprunte) throw new ReservationException("Ce livre est déjà emprunté.");
-        if (abonneReserve != null && !reservationExpiree()) throw new ReservationException("Ce livre est réservé.");
+        if (abonneReserve != null && !reservationExpiree()) throw new ReservationException("Ce livre est réservé par : " + abonneReserve.getNom());
         if (abonneReserve != null && reservationExpiree()) {
             abonneReserve = null;
         }
@@ -63,6 +63,13 @@ public class Livre implements Document {
     }
 
     private boolean reservationExpiree() {
-        return dateReservation != null && dateReservation.plusHours(1).isBefore(LocalDateTime.now());
+        return dateReservation != null && dateReservation.plusMinutes(1).isBefore(LocalDateTime.now());
     }
+
+    public LocalDateTime getDateEmprunt() {
+        return dateEmprunt;
+    }
+
+
+
 }

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 
-public class DVD implements Document {
+public class DVD implements Document{
     private int numero;
     private String titre;
 
@@ -33,7 +33,7 @@ public class DVD implements Document {
         if (adulte && ab.getAge() < 16)
             throw new ReservationException("Ce DVD est réservé aux plus de 16 ans");
         if (estEmprunte) throw new ReservationException("Ce DVD est déjà emprunté.");
-        if (abonneReserve != null && !reservationExpiree()) throw new ReservationException("Ce DVD est réservé.");
+        if (abonneReserve != null && !reservationExpiree()) throw new ReservationException("Ce DVD est réservé par : " + abonneReserve.getNom());
         if (abonneReserve != null && reservationExpiree()) {
             abonneReserve = null;
         }
@@ -49,7 +49,7 @@ public class DVD implements Document {
         if (adulte && !aLAge(ab)) throw new EmpruntException("Vous n'avez pas l'âge requis pour ce DVD (+16 ans).");
 
         if (abonneReserve != null && !abonneReserve.equals(ab) && !reservationExpiree()) {
-            throw new EmpruntException("Ce DVD est réservé par un autre abonné.");
+            throw new EmpruntException("Ce DVD est réservé par : " + abonneReserve.getNom());
         }
         if (abonneReserve != null && reservationExpiree()) {
             abonneReserve = null;
@@ -67,6 +67,7 @@ public class DVD implements Document {
         dateReservation = null;
         dateEmprunt = null;
 
+
     }
 
     private boolean reservationExpiree() {
@@ -76,4 +77,11 @@ public class DVD implements Document {
     private boolean aLAge(Abonne ab) {
         return Period.between(ab.getDateNaissance(), LocalDate.now()).getYears() > 16;
     }
+
+
+    public LocalDateTime getDateEmprunt() {
+        return dateEmprunt;
+    }
+
+
 }

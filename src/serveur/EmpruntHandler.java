@@ -52,7 +52,7 @@ public class EmpruntHandler extends ServiceHandler {
 
             try {
                 doc.emprunter(ab);
-                out.println(" Emprunt réussi !");
+                out.println(" Emprunt réussi ! Abonné : " + ab.getNom());
             } catch (EmpruntException e) {
                 out.println(" Échec d'emprunt : " + e.getMessage());
             }

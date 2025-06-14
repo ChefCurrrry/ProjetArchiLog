@@ -13,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Exception" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -28,9 +28,6 @@
     &quot;assignee&quot;: &quot;ChefCurrrry&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="323bae61-46eb-4de6-9596-e14411f86dc1" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ChefCurrrry/ProjetArchiLog.git&quot;,
@@ -45,37 +42,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientEmprunt.executor": "Run",
-    "Application.ClientReservation.executor": "Run",
-    "Application.ClientRetour.executor": "Run",
-    "Application.ServeurCommun.executor": "Run",
-    "Application.ServeurEmprunt.executor": "Run",
-    "Application.ServeurReservation.executor": "Run",
-    "Application.ServeurRetour.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/StarPlatinum18/Documents/Projet_Universitaire/ProjetArchiLog/ProjetMediathek/src/Main.java",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientEmprunt.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientReservation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientRetour.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LancerServeur.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServeurCommun.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServeurEmprunt.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServeurReservation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServeurRetour.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/StarPlatinum18/Documents/Projet_Universitaire/ProjetArchiLog/ProjetMediathek/lib/jakarta.mail-2.0.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/StarPlatinum18/Documents/Projet_Universitaire/ProjetArchiLog/ProjetMediathek/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ClientEmprunt">
+}</component>
+  <component name="RunManager" selected="Application.ClientReservation">
     <configuration name="ClientEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientEmprunt" />
       <module name="ProjetMediathek" />
@@ -116,6 +118,8 @@
       </method>
     </configuration>
     <configuration name="LancerServeur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-23.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="serveur.LancerServeur" />
       <module name="ProjetMediathek" />
       <extension name="coverage">
@@ -141,12 +145,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ClientEmprunt" />
+      <item itemvalue="Application.ClientReservation" />
+      <item itemvalue="Application.ClientRetour" />
+      <item itemvalue="Application.LancerServeur" />
+      <item itemvalue="Application.ServeurEmprunt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientEmprunt" />
-        <item itemvalue="Application.ClientRetour" />
         <item itemvalue="Application.ClientReservation" />
         <item itemvalue="Application.LancerServeur" />
+        <item itemvalue="Application.ClientRetour" />
+        <item itemvalue="Application.ClientEmprunt" />
         <item itemvalue="Application.ServeurEmprunt" />
       </list>
     </recent_temporary>
@@ -168,6 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749573843737</updated>
       <workItem from="1749573844990" duration="9069000" />
+      <workItem from="1749933037680" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit and Last Commit">
       <option name="closed" value="true" />
@@ -209,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749808646413</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Another commit">
+      <option name="closed" value="true" />
+      <created>1749917623614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749917623614</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,11 +237,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit and Last Commit" />
-    <MESSAGE value="Another commit" />
     <MESSAGE value="Faut changer le serveur et les service, mettre une classe pour génér" />
     <MESSAGE value="Faut changer le serveur et les service, mettre une classe pour généraliser les services" />
     <MESSAGE value="ça remarche mais avec pleins de modifs" />
-    <option name="LAST_COMMIT_MESSAGE" value="ça remarche mais avec pleins de modifs" />
+    <MESSAGE value="Another commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

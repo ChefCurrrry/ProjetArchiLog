@@ -13,12 +13,12 @@ public class GestionnaireMediatheque {
         this.abonnes = new ArrayList<>();
         this.documents = new ArrayList<>();
 
-        // Création des abonnés (en dur)
+        // Création des abonnés
         abonnes.add(new Abonne(1, "Alice", LocalDate.of(2004, 5, 10)));
         abonnes.add(new Abonne(2, "Bob", LocalDate.of(1980, 3, 25)));
         abonnes.add(new Abonne(3, "Charlie", LocalDate.of(2010, 11, 1))); // moins de 16 ans
 
-        // Création des documents (en dur)
+        // Création des documents
         documents.add(new Livre(101, "Le Petit Prince", 96));
         documents.add(new Livre(102, "1984", 328));
         documents.add(new DVD(201, "Matrix", false));
