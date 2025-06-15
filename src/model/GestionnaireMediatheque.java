@@ -1,11 +1,11 @@
-package serveur;
+package model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GestionnaireMediatheque {
-
+    private static GestionnaireMediatheque instance;
     private List<Document> documents;
     private List<Abonne> abonnes;
 
@@ -34,8 +34,15 @@ public class GestionnaireMediatheque {
 
     public Abonne getAbonne(int numero) {
         for (Abonne a : abonnes) {
-            if (a.getNumero() == numero) return a;
+            if (a.getId() == numero) return a;
         }
         return null;
+    }
+
+    public static GestionnaireMediatheque getInstance() {
+        if (instance == null) {
+            instance = new GestionnaireMediatheque();
+        }
+        return instance;
     }
 }

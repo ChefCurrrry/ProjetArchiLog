@@ -15,7 +15,4 @@ public abstract class Service implements Runnable {
     }
     public abstract int getPORT();
 
-    protected void finalize() throws Throwable {
-        client.close();
-    }
 }

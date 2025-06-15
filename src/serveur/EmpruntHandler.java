@@ -1,20 +1,27 @@
 package serveur;
 
+import exception.EmpruntException;
+import model.Abonne;
+import model.Document;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.time.Duration;
+import java.time.LocalDateTime;
 
 public class EmpruntHandler extends ServiceHandler {
-    private static int PORT = 3000;
+    private static final int PORT = 3000;
 
+    public EmpruntHandler(Socket socket) {
+        super(socket);
+    }
 
+    @Override
     public int getPORT() {
         return PORT;
-    }
-    public EmpruntHandler(Socket socket ) {
-        super(socket);
     }
 
     @Override
@@ -30,7 +37,7 @@ public class EmpruntHandler extends ServiceHandler {
 
             String[] infos = ligne.split(";");
             if (infos.length != 2) {
-                out.println(" Format invalide.");
+                out.println("Format invalide. Format attendu : idAbonné;idDocument");
                 return;
             }
 
@@ -41,29 +48,40 @@ public class EmpruntHandler extends ServiceHandler {
             Document doc = gestionnaireStatic.getDocument(idDocument);
 
             if (ab == null) {
-                out.println(" Abonné inconnu.");
+                out.println("Abonné inconnu.");
                 return;
             }
 
             if (doc == null) {
-                out.println(" Document introuvable.");
+                out.println("Document introuvable.");
                 return;
             }
 
+            //  CERTIF GÉRONIMO : vérifier si l’abonné est banni
+            if (ab.estBanni()) {
+                out.println(" Vous êtes banni jusqu’au " + ab.getDateFinBannissementFormatee());
+                return;
+            }
+
+            LocalDateTime ancienneDate = doc.getDateEmprunt();
+            Abonne dernierEmprunteur = doc.getDernierEmprunteur();
+
             try {
                 doc.emprunter(ab);
-                out.println(" Emprunt réussi ! Abonné : " + ab.getNom());
+                out.println(" Emprunt réussi pour " + ab.getNom());
+
             } catch (EmpruntException e) {
                 out.println(" Échec d'emprunt : " + e.getMessage());
+
             }
 
         } catch (IOException e) {
             System.err.println("Erreur communication : " + e.getMessage());
-        }finally {
+        } finally {
             try {
                 getClientSocket().close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.err.println("Erreur fermeture socket : " + e.getMessage());
             }
         }
     }

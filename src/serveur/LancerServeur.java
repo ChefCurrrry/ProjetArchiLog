@@ -1,5 +1,7 @@
 package serveur;
 
+import model.GestionnaireMediatheque;
+
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 

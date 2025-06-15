@@ -31,11 +31,6 @@ public class Serveur implements Runnable {
     }
 
 
-    protected void finalize() throws Throwable {
-        try {
-            this.listen_socket.close();
-        } catch (IOException e1) {
-        }
-    }
+
 }
 

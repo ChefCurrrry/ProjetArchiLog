@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +56,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/StarPlatinum18/Documents/Projet_Universitaire/ProjetArchiLog/ProjetMediathek/lib/jakarta.mail-2.0.1.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/StarPlatinum18/Downloads/SAE/SAE/SAE_Mediatek&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,13 +77,13 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.ClientReservation">
+  <component name="RunManager" selected="Application.ClientEmprunt">
     <configuration name="ClientEmprunt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientEmprunt" />
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serveur.*" />
+          <option name="PATTERN" value="exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +96,7 @@
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serveur.*" />
+          <option name="PATTERN" value="exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +109,7 @@
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serveur.*" />
+          <option name="PATTERN" value="exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +124,7 @@
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serveur.*" />
+          <option name="PATTERN" value="exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,7 +137,7 @@
       <module name="ProjetMediathek" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serveur.*" />
+          <option name="PATTERN" value="exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,10 +154,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientEmprunt" />
+        <item itemvalue="Application.ClientRetour" />
         <item itemvalue="Application.ClientReservation" />
         <item itemvalue="Application.LancerServeur" />
-        <item itemvalue="Application.ClientRetour" />
-        <item itemvalue="Application.ClientEmprunt" />
         <item itemvalue="Application.ServeurEmprunt" />
       </list>
     </recent_temporary>
@@ -179,7 +179,8 @@
       <option name="presentableId" value="Default" />
       <updated>1749573843737</updated>
       <workItem from="1749573844990" duration="9069000" />
-      <workItem from="1749933037680" duration="1634000" />
+      <workItem from="1749933037680" duration="3276000" />
+      <workItem from="1749936511467" duration="9280000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit and Last Commit">
       <option name="closed" value="true" />
@@ -229,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749917623614</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Another commit">
+      <option name="closed" value="true" />
+      <created>1749935140360</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749935140360</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fin De Projet !">
+      <option name="closed" value="true" />
+      <created>1749945477894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749945477894</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +258,8 @@
     <MESSAGE value="Faut changer le serveur et les service, mettre une classe pour généraliser les services" />
     <MESSAGE value="ça remarche mais avec pleins de modifs" />
     <MESSAGE value="Another commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another commit" />
+    <MESSAGE value="Fin De Projet !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fin De Projet !" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

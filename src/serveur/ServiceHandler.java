@@ -1,6 +1,7 @@
 package serveur;
 
-import java.io.IOException;
+import model.GestionnaireMediatheque;
+
 import java.net.Socket;
 
 public abstract class ServiceHandler extends Service {
